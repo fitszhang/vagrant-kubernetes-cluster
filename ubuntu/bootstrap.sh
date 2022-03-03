@@ -10,11 +10,7 @@ echo "[TASK 0] Setting TimeZone"
 timedatectl set-timezone Asia/Shanghai
 
 echo "[TASK 1] Setting DNS"
-cat >/etc/systemd/resolved.conf <<EOF
-[Resolve]
-DNS=8.8.8.8
-FallbackDNS=223.5.5.5
-EOF
+sed -i -e 's/#DNS=/DNS=8.8.8.8/' /etc/systemd/resolved.conf
 systemctl daemon-reload
 systemctl restart systemd-resolved.service
 mv /etc/resolv.conf /etc/resolv.conf.bak
