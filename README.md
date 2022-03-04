@@ -194,6 +194,7 @@ Bringing machine 'kworker2' up with 'virtualbox' provider...
 
 
 ## 登录到kmaster
+```bash
 root@kmaster:~# ssh kworker1
 root@kmaster:~# scp kmaster.k8s.com:/root/joincluster.sh /root/joincluster.sh
 root@kmaster:~# bash /root/joincluster.sh
@@ -202,6 +203,7 @@ root@kmaster:~# ssh kworker2
 root@kmaster:~# scp kmaster.k8s.com:/root/joincluster.sh /root/joincluster.sh
 root@kmaster:~# bash /root/joincluster.sh
 root@kmaster:~# exit
+```
 
 ## 配置.kube/config
 
