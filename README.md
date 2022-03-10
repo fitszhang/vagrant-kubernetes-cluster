@@ -192,7 +192,7 @@ Bringing machine 'kworker2' up with 'virtualbox' provider...
 
 > `root`用户密码为`kubeadmin`
 
-
+## 如果knode节点joincluster脚本没有执行成功执行以下命令
 ## 登录到kmaster
 ```bash
 root@kmaster:~# ssh kworker1
