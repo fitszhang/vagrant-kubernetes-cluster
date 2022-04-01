@@ -30,9 +30,12 @@
 确保vagrant和virtualbox已经安装
 打开powershell，cd到ubuntu 路径下
 执行：
+```bash
 vagrant up
+```
+输出示例
 
-输出示例：
+```bash
 Bringing machine 'kmaster' up with 'virtualbox' provider...
 Bringing machine 'kworker1' up with 'virtualbox' provider...
 Bringing machine 'kworker2' up with 'virtualbox' provider...
