@@ -25,9 +25,14 @@
 
 ## 一键安装
 
-```bash
+右上角 Code，有个选项 download zip
+下载zip包后，解压到你的文件夹中
+确保vagrant和virtualbox已经安装
+打开powershell，cd到ubuntu 路径下
+执行：
 vagrant up
 
+输出示例：
 Bringing machine 'kmaster' up with 'virtualbox' provider...
 Bringing machine 'kworker1' up with 'virtualbox' provider...
 Bringing machine 'kworker2' up with 'virtualbox' provider...
